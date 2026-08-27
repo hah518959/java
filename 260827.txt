@@ -5,3 +5,8 @@ String value=textField.getText();
 System.out.println("입력값 : "+value);
 아마도 String이 있는거 보니까. 문자열을 받을 수 있게 자료형을 설정해줘야하나봄
 textField에 있는 값(value)을 콘솔에서 실행시킴
+
+
+클래스를 변수로 쓰기 위한 형태
+=> 클래스 객체이름 = new 클래스();
+e.g) JButton btnNewButton = new JButoon(값 가져오기);
