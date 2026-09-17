@@ -1,0 +1,19 @@
+Switch(변수){
+  case 1:
+    ~~~~~~~~~~~~~~~;
+    break;
+  
+  case 2:
+    ~~~~~~~~~~~~~~~;
+    break;
+  
+  case 3:
+    ~~~~~~~~~~~~~~~;
+    break;
+    
+  default:
+    ~~~~~~~~~~~~~~~;
+}
+
+case <- if, else if같은거
+default <- else 같은거
