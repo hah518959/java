@@ -15,3 +15,11 @@ private가 있는 클래스함수가 있는 곳에서는 객체를 사용할 수
 
 -생성자
 클래스명과 같은 매서드
+
+class Test{
+	private String name;
+	Test(String name){ //생성자
+		this.name=name;
+	}
+
+this는 Test(String name)에서 name을 불러오고, =name은 매개변수
