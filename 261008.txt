@@ -22,4 +22,4 @@ class Test{
 		this.name=name;
 	}
 
-this는 Test(String name)에서 name을 불러오고, =name은 매개변수
+this는 Test(String name)에서 name을 불러오고, =name은 외부에서 값을 받아오는 매개변수
