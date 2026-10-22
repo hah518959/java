@@ -29,3 +29,19 @@ class Main{
 
 //대신 생성자를 하나라도 정의하면 기본 생성자는 자동으로 안 만들어짐(즉 무조건 생성자 형태가 1개 이상은 있어야 함)
 
+// -this() 생성자
+사용시 주의 반드시 생성자의 첫 번째 문자이어야 한다.
+
+exam)
+	System.out.println("tlqkf"+ sang);
+	this(1818);
+이게 아님
+	this(1818);
+	System.out.println("tlqkf"+ sang);
+이거임
+
+
+//final 멤버 변수와 생성자
+
+final은 단 한 번만 초기화되는 변수임
+
