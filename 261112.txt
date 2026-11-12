@@ -108,3 +108,61 @@ public class MainTest {
 
 생성자를 객체로 생성을 하고 저런 식으로 school을 받을 때는 오류가 나는데 static을 사용하니까 그냥 불러와 지기 때문에 오류가 안남
 ???????????????????????????이게 뭔소리여
+
+
+package p20261112;
+
+/*class Student{
+	static String school="폴리텍대학";
+	String name;;
+	Student(String name){
+		this.name = name;
+	}
+}
+
+public class MainTest {
+	public static void main(String[] args) {
+		Student s1 = new Student("철수");
+		Student s2 = new Student("영희");
+		System.out.println(s1.school);
+		System.out.println(s2.school);
+		System.out.println(Student.school);
+	}
+}*/
+
+-----------------------------------------------------------------------------------------------------------
+
+/*class Counter{
+	static int count = 0;
+	Counter(){
+		count++;
+	}
+}
+
+public class MainTest{
+	public static void main(String[] args) {
+		new Counter();
+		new Counter();
+		new Counter();
+		
+		System.out.println(Counter.count);
+	}
+}*/
+
+-----------------------------------------------------------------------------------------------------------
+
+class Calculator{
+	static int add(int a, int b) {
+		return a+b;
+	}
+}
+
+public class MainTest{
+	public static void main(String[] args) {
+		int result = Calculator.add(10, 20);
+		
+		System.out.println(result);
+	}
+}
+
+-----------------------------------------------------------------------------------------------------------
