@@ -1,0 +1,36 @@
+-static 클래스 전체에 공유하는 변수나 메서드를 만들 때 사용
+
+static으로 생성된 메서드는 객체를 생성하지 않고도 클래스 이름으로 접근 가능
+
+package sec02.exam07;
+
+class DonutInf{
+	static String phoneNumber = "01-1234-5678";
+	static void callShop() {
+		System.out.println("도넛가게: "+phoneNumber);
+	}
+}
+
+
+public class StaticMethodExample {
+	public static void main(String[] args) {
+		DonutInf.callShop();
+	}
+
+}
+
+원래 new 해서 객체를 생성해서 사용하는데 이건 그냥 메인 클래스로 불러와서 바로 사용 가능함.
+
+static멤버 특징
+-인스턴스 변수에 접근 불가
+
+-static final 변수
+final: 변수를 상수로 바꾸어주는 예약어
+
+static + final은 값이 바뀌지 않고, 객체 없이 접근 가능한 값을 만들 수도 있다.
+
++장점
+한곳에서 값으 관리할 수 있어 일관성 유지가 좋고
+가독성이 좋아지며,
+실수 방지에 용이하여 안전성이 좋아진다.
+
