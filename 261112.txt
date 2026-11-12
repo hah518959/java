@@ -84,3 +84,27 @@ try{}의 안에 있는게 발생했을 때
 catch (ArrayIndexOutOfBoundsException)은 배열 안에 인덱스의 범주를 벗어난 예외 처리가 발생했을 때 출력
 catch (Exception)은 그냥 다른 문자를 입력했을 때 만약 배열이 int인데 String을 넣었을 때 예외 처리 발생하면 출력
 finally 위에 catch가 다 끝났을 때 finally로 무조건은 아닌데 여기는 끝나면 끝났다고 알려줘야하니까 씀
+
+
+package p20261112;
+
+class Student{
+	static String school="폴리텍대학";
+	String name;;
+	Student(String name){
+		this.name = name;
+	}
+}
+
+public class MainTest {
+	public static void main(String[] args) {
+		Student s1 = new Student("철수");
+		Student s2 = new Student("영희");
+		System.out.println(s1.school);
+		System.out.println(s2.school);
+		System.out.println(Student.school);
+	}
+}
+
+생성자를 객체로 생성을 하고 저런 식으로 school을 받을 때는 오류가 나는데 static을 사용하니까 그냥 불러와 지기 때문에 오류가 안남
+???????????????????????????이게 뭔소리여
